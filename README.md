@@ -49,10 +49,11 @@ $ ./target/debug/fuzzed # runs fuzzing
 ## Updating libfuzzer from upstream
 
 ```
-./update-libfuzzer.sh <llvm/compiler-rt SHA1>
+./libfuzzer-sys/update-libfuzzer.sh <llvm/compiler-rt SHA1>
 ```
 
 ## License
 
-All files in `libfuzzer` directory are licensed NCSA.
+All files in the `libfuzzer-sys/upstream` directory are licensed NCSA.
+
 Everything else is dual-licensed Apache 2.0 and MIT.

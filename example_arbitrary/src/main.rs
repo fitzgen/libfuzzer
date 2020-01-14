@@ -1,8 +1,8 @@
 #![no_main]
 
-use libfuzzer_sys::{arbitrary, fuzz_target};
+use libfuzzer::{arbitrary::Arbitrary, fuzz_target};
 
-#[derive(arbitrary::Arbitrary, Debug)]
+#[derive(Arbitrary, Debug)]
 struct Rgb {
     r: u8,
     g: u8,

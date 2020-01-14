@@ -12,7 +12,7 @@ fn main() {
         println!("cargo:rustc-link-lib=stdc++");
     } else {
         let mut build = cc::Build::new();
-        let sources = ::std::fs::read_dir("libfuzzer")
+        let sources = ::std::fs::read_dir("upstream")
             .expect("listable source directory")
             .map(|de| de.expect("file in directory").path())
             .filter(|p| p.extension().map(|ext| ext == "cpp") == Some(true))
